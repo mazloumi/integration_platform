@@ -1,0 +1,13 @@
+# requirements.txt
+Django>=4.2.0
+djangorestframework>=3.14.0
+django-cors-headers>=4.0.0
+requests>=2.31.0
+google-cloud-pubsub>=2.18.0
+gunicorn>=21.2.0
+psycopg2-binary>=2.9.0  # For PostgreSQL
+python-dotenv>=1.0.0
+dj-database-url==2.1.0
+Js2Py>=0.74  # For JavaScript condition evaluation
+django-daisy>=1.1.0
+django-humanize>=0.1.2

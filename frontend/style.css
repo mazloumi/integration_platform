@@ -1,0 +1,414 @@
+body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f3ef;
+    }
+    .demo-header {
+      background: linear-gradient(135deg, #8c0327 0%, #6d0313 100%);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(140, 3, 39, 0.2);
+    }
+    .demo-header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    .demo-header p {
+      margin: 10px 0 0 0;
+      opacity: 0.95;
+    }
+    .demo-examples {
+      max-width: 1400px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .example-section {
+      background: #faf8f5;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(140, 3, 39, 0.1);
+      border: 1px solid #e8dfd2;
+    }
+    .example-section h3 {
+      margin-top: 0;
+      color: #8c0327;
+    }
+    .example-btn {
+      background: #8c0327;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      margin: 5px;
+      transition: all 0.2s;
+    }
+    .example-btn:hover {
+      background: #6d0313;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 6px rgba(140, 3, 39, 0.3);
+    }
+    .json-mapper {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #f5f3ef;
+    }
+    .json-mapper-section {
+      background: #faf8f5;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(140, 3, 39, 0.1);
+      border: 1px solid #e8dfd2;
+    }
+    .json-mapper-section h2 {
+      margin: 0 0 15px 0;
+      color: #8c0327;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .json-mapper-section h3 {
+      margin: 15px 0 10px 0;
+      color: #8c0327;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .json-mapper-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .json-mapper-input {
+      width: 100%;
+      padding: 8px 12px;
+      border: 2px solid #e8dfd2;
+      border-radius: 6px;
+      font-size: 14px;
+      box-sizing: border-box;
+      background: white;
+      transition: border-color 0.2s;
+    }
+    .json-mapper-input:focus {
+      outline: none;
+      border-color: #8c0327;
+    }
+    .json-mapper-textarea {
+      width: 100%;
+      height: 150px;
+      padding: 10px;
+      border: 2px solid #e8dfd2;
+      border-radius: 6px;
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      resize: vertical;
+      box-sizing: border-box;
+      background: white;
+      transition: border-color 0.2s;
+    }
+    .json-mapper-textarea:focus {
+      outline: none;
+      border-color: #8c0327;
+    }
+    .json-mapper-select {
+      width: 100%;
+      padding: 8px 12px;
+      border: 2px solid #e8dfd2;
+      border-radius: 6px;
+      font-size: 14px;
+      box-sizing: border-box;
+      background: white;
+      transition: border-color 0.2s;
+    }
+    .json-mapper-select:focus {
+      outline: none;
+      border-color: #8c0327;
+    }
+    .json-mapper-btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.2s;
+      margin-right: 10px;
+      font-weight: 500;
+    }
+    .json-mapper-btn-primary {
+      background: #8c0327;
+      color: white;
+    }
+    .json-mapper-btn-primary:hover {
+      background: #6d0313;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 6px rgba(140, 3, 39, 0.3);
+    }
+    .json-mapper-btn-success {
+      background: #76a75d;
+      color: white;
+    }
+    .json-mapper-btn-success:hover {
+      background: #5e8748;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 6px rgba(118, 167, 93, 0.3);
+    }
+    .json-mapper-btn-warning {
+      background: #d97706;
+      color: white;
+    }
+    .json-mapper-btn-warning:hover {
+      background: #b45309;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 6px rgba(217, 119, 6, 0.3);
+    }
+    .json-mapper-btn-danger {
+      background: #b91c1c;
+      color: white;
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+    .json-mapper-btn-danger:hover {
+      background: #991b1b;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 6px rgba(185, 28, 28, 0.3);
+    }
+    .json-mapper-btn-small {
+      padding: 5px 12px;
+      font-size: 13px;
+    }
+    .json-mapper-form-group {
+      margin-bottom: 15px;
+    }
+    .json-mapper-form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+      color: #555;
+    }
+    .json-mapper-field-list {
+      border: 2px solid #e8dfd2;
+      border-radius: 6px;
+      padding: 10px;
+      max-height: 300px;
+      overflow-y: auto;
+      background: white;
+    }
+    .json-mapper-field-item {
+      padding: 8px 12px;
+      margin: 5px 0;
+      background: #fef9f3;
+      border-radius: 6px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: all 0.2s;
+    }
+    .json-mapper-field-item:hover {
+      background: #fef3e8;
+      border-color: #8c0327;
+      transform: translateX(2px);
+    }
+    .json-mapper-mappings {
+      margin-top: 20px;
+    }
+    .json-mapper-mapping-row {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr auto auto;
+      gap: 10px;
+      align-items: start;
+      padding: 15px;
+      background: #fef9f3;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      border: 1px solid #e8dfd2;
+    }
+    .json-mapper-mapping-field {
+      padding: 8px 12px;
+      background: white;
+      border: 2px solid #e8dfd2;
+      border-radius: 6px;
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .json-mapper-arrow {
+      display: flex;
+      align-items: center;
+      color: #8c0327;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .json-mapper-transform {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .json-mapper-transform select,
+    .json-mapper-transform input {
+      padding: 6px 10px;
+      border: 2px solid #e8dfd2;
+      border-radius: 6px;
+      font-size: 13px;
+      box-sizing: border-box;
+      background: white;
+    }
+    .json-mapper-transform textarea {
+      padding: 8px 10px;
+      border: 2px solid #e8dfd2;
+      border-radius: 6px;
+      font-size: 12px;
+      font-family: 'Courier New', monospace;
+      min-height: 80px;
+      resize: vertical;
+      box-sizing: border-box;
+      background: white;
+    }
+    .json-mapper-source-fields {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 5px;
+    }
+    .json-mapper-source-field-chip {
+      padding: 3px 8px;
+      background: #fef3e8;
+      border: 1px solid #8c0327;
+      border-radius: 4px;
+      font-size: 11px;
+      cursor: pointer;
+      transition: all 0.2s;
+      color: #8c0327;
+      font-weight: 500;
+    }
+    .json-mapper-source-field-chip:hover {
+      background: #8c0327;
+      color: white;
+    }
+    .json-mapper-source-field-chip.selected {
+      background: #8c0327;
+      color: white;
+    }
+    .json-mapper-output {
+      background: #fef9f3;
+      padding: 15px;
+      border-radius: 6px;
+      border: 2px solid #e8dfd2;
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      white-space: pre-wrap;
+      max-height: 400px;
+      overflow-y: auto;
+      margin-top: 10px;
+    }
+    .json-mapper-error {
+      color: #991b1b;
+      padding: 10px;
+      background: #fee2e2;
+      border-radius: 6px;
+      margin-top: 10px;
+      border: 1px solid #fecaca;
+    }
+    .json-mapper-info {
+      color: #8c0327;
+      padding: 10px;
+      background: #fef3e8;
+      border-radius: 6px;
+      margin-top: 10px;
+      font-size: 13px;
+      border: 1px solid #e8dfd2;
+    }
+    .json-mapper-tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #e8dfd2;
+    }
+    .json-mapper-tab {
+      padding: 10px 20px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      color: #78716c;
+      border-bottom: 3px solid transparent;
+      margin-bottom: -2px;
+      transition: all 0.2s;
+      font-weight: 500;
+    }
+    .json-mapper-tab:hover {
+      color: #8c0327;
+    }
+    .json-mapper-tab.active {
+      color: #8c0327;
+      border-bottom-color: #8c0327;
+    }
+    .json-mapper-tab-content {
+      display: none;
+    }
+    .json-mapper-tab-content.active {
+      display: block;
+    }
+    .json-mapper-item {
+      padding: 15px;
+      background: #f8f9fa;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .json-mapper-item:hover {
+      border-color: #007bff;
+    }
+    .json-mapper-item.active {
+      border-color: #28a745;
+      background: #d4edda;
+    }
+    .json-mapper-item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .json-mapper-badge {
+      padding: 3px 8px;
+      border-radius: 3px;
+      font-size: 12px;
+      font-weight: 500;
+      margin-left: 8px;
+    }
+    .json-mapper-badge-get {
+      background: #17a2b8;
+      color: white;
+    }
+    .json-mapper-badge-post {
+      background: #28a745;
+      color: white;
+    }
+    .json-mapper-badge-webhook {
+      background: #fd7e14;
+      color: white;
+    }
+    .json-mapper-badge-pubsub {
+      background: #6f42c1;
+      color: white;
+    }
+    .json-mapper-copy-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .json-mapper-copy-input {
+      flex: 1;
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      background: #f8f9fa;
+    }
